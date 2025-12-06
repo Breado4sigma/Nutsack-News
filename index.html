@@ -1,76 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutsack News</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        .story-list {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        .story {
-            background: white;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-        }
-        .story a {
-            text-decoration: none;
-            color: #0044aa;
-            font-weight: bold;
-        }
-        footer {
-            margin-top: 40px;
-            text-align: center;
-            color: #777;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutsack News</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #1a1124;
+      color: #eee;
+    }
+
+    header {
+      background: #7a3fd3;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .headline-card {
+      background: #2a1a3d;
+      border-left: 5px solid #9a5cff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+
+    .headline-card:hover {
+      transform: scale(1.02);
+    }
+
+    .headline-title {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #d4b8ff;
+      font-weight: bold;
+    }
+
+    .headline-desc {
+      font-size: 1rem;
+      color: #e4d7ff;
+      opacity: 0.9;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #7a3fd3;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    footer button {
+      background: #fff;
+      color: #7a3fd3;
+      border: none;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    footer button:hover {
+      background: #e4d7ff;
+      color: #4a1f8f;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    Nutsack News
+  </header>
 
-    <h1>Nutsack News</h1>
+  <div class="container">
 
-    <div class="story-list">
-
-        <!-- NEWEST STORY (goes at the top) -->
-        <div class="story">
-            <a href="story4.html">Ernie Breaks Truce After Remembering Elaina’s Quotes</a>
-            <p>Published: December 5, 2025</p>
+    <!-- Story 4 (NEW, ON TOP) -->
+    <a href="story4.html" style="text-decoration:none; color:inherit;">
+      <div class="headline-card">
+        <div class="headline-title">Ernie Retracts Truce After Elaina’s New Quote</div>
+        <div class="headline-desc">
+          Peace falls apart again as Elaina drops yet another bizarre statement, sparking fresh chaos online.
         </div>
+      </div>
+    </a>
 
-        <!-- Existing stories below -->
-        <div class="story">
-            <a href="story3.html">Placeholder Story 3</a>
-            <p>Published: December 5, 2025</p>
+    <!-- Story 3 -->
+    <a href="story3.html" style="text-decoration:none; color:inherit;">
+      <div class="headline-card">
+        <div class="headline-title">Ernie & Elaina End Their Beef — #ElijahLivesMatter Emerges</div>
+        <div class="headline-desc">
+          A sudden truce surprises the community as a new hashtag allegedly coined with Oliver’s help spreads rapidly.
         </div>
+      </div>
+    </a>
 
-        <div class="story">
-            <a href="story2.html">Placeholder Story 2</a>
-            <p>Another earlier date goes here</p>
+    <!-- Story 2 -->
+    <a href="story2.html" style="text-decoration:none; color:inherit;">
+      <div class="headline-card">
+        <div class="headline-title">Elaina Faces Backlash Over Controversial Statements</div>
+        <div class="headline-desc">
+          Community members react after Elaina's recent comments spark widespread debate and criticism online.
         </div>
+      </div>
+    </a>
 
-        <div class="story">
-            <a href="story.html">Placeholder Story 1</a>
-            <p>Another earlier date goes here</p>
+    <!-- Story 1 -->
+    <a href="story1.html" style="text-decoration:none; color:inherit;">
+      <div class="headline-card">
+        <div class="headline-title">New Beef Between Elijah and Ernie Breaks Out</div>
+        <div class="headline-desc">
+          Sources report escalating tension after a heated argument went public earlier today.
         </div>
+      </div>
+    </a>
 
-    </div>
+  </div>
 
-    <footer>
-        <a href="rights.html">Rights & Disclaimer</a>
-    </footer>
+  <footer>
+    <button onclick="window.location.href='rights.html'">© 2025 Nutsack News — All Rights Reserved</button>
+  </footer>
 
 </body>
 </html>
