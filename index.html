@@ -1,61 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Nutsack News</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 30px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            margin-bottom: 25px;
-        }
-        .headline {
-            margin-bottom: 18px;
-            padding: 10px 0;
-            border-bottom: 1px solid #ccc;
-        }
-        .headline a {
-            text-decoration: none;
-            font-size: 20px;
-            color: #1a0dab;
-        }
-        .headline a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutsack News</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #1a1124;
+      color: #eee;
+    }
+
+    header {
+      background: #7a3fd3;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .headline-card {
+      background: #2a1a3d;
+      border-left: 5px solid #9a5cff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+
+    .headline-card:hover {
+      transform: scale(1.02);
+    }
+
+    .headline-title {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #d4b8ff;
+      font-weight: bold;
+    }
+
+    .headline-desc {
+      font-size: 1rem;
+      color: #e4d7ff;
+      opacity: 0.9;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #7a3fd3;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    footer button {
+      background: #fff;
+      color: #7a3fd3;
+      border: none;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    footer button:hover {
+      background: #e4d7ff;
+      color: #4a1f8f;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    Nutsack News
+  </header>
 
-<h1>Nutsack News – Latest Headlines</h1>
+  <div class="container">
 
-<!-- NEWEST STORIES GO AT THE TOP -->
+    <!-- Story 6 (NEWEST, ON TOP) -->
+    <a href="story6.html" style="text-decoration:none; color:inherit;">
+      <div class="headline-card">
+        <div class="headline-title">Elaina Calls Group “Dirty Filthy No Manner Havin’ Yankees”</div>
+        <div class="headline-desc">
+          A manners discussion derails instantly after Elaina follows up her critique with a new insult now echoing across the server.
+        </div>
+      </div>
+    </a>
 
-<div class="headline">
-    <a href="story6.html">Elaina Calls Everyone “Dirty Filthy No Manner Havin’ Yankees” After Manners Argument</a>
-</div>
+    <!-- Story 5 -->
+    <a href="story5.html" style="text-decoration:none; color:inherit;">
+      <div class="headline-card">
+        <div class="headline-title">Elaina Responds to Controversial Comment With New Suspicious Statement</div>
+        <div class="headline-desc">
+          After reacting to a remark about banning gay players, Elaina adds her own cryptic line — raising fresh questions.
+        </div>
+      </div>
+    </a>
 
-<div class="headline">
-    <a href="story5.html">Elaina Says “That Sounds Like Something I Would Say” in Response to Game Comment</a>
-</div>
+    <!-- Story 4 -->
+    <a href="story4.html" style="text-decoration:none; color:inherit;">
+      <div class="headline-card">
+        <div class="headline-title">Ernie Retracts Truce After Elaina’s New Quote</div>
+        <div class="headline-desc">
+          Peace falls apart again as Elaina drops yet another bizarre statement, sparking fresh chaos online.
+        </div>
+      </div>
+    </a>
 
-<div class="headline">
-    <a href="story4.html">Ernie Breaks Truce After Elaina Says “A yaps a yap and a faps a fap”</a>
-</div>
+    <!-- Story 3 -->
+    <a href="story3.html" style="text-decoration:none; color:inherit;">
+      <div class="headline-card">
+        <div class="headline-title">Ernie & Elaina End Their Beef — #ElijahLivesMatter Emerges</div>
+        <div class="headline-desc">
+          A sudden truce surprises the community as a new hashtag allegedly coined with Oliver’s help spreads rapidly.
+        </div>
+      </div>
+    </a>
 
-<div class="headline">
-    <a href="story3.html">Elaina Responds to Accusations With “Well That’s Unfortunate For You Then”</a>
-</div>
+    <!-- Story 2 -->
+    <a href="story2.html" style="text-decoration:none; color:inherit;">
+      <div class="headline-card">
+        <div class="headline-title">Elaina Faces Backlash Over Controversial Statements</div>
+        <div class="headline-desc">
+          Community members react after Elaina's recent comments spark widespread debate and criticism online.
+        </div>
+      </div>
+    </a>
 
-<div class="headline">
-    <a href="story2.html">Elaina Backpedals After Saying “Bro Thinks He’s the Gays”</a>
-</div>
-
-<div class="headline">
-    <a href="story1.html">Elaina Accidentally Causes Chaos in Discord VC</a>
-</div>
-
-</body>
-</html>
+    <!-- Story 1 -->
+    <a href="story1.html" style="text-decoration:none; color:inherit;">
+      <div class="headline-card">
+        <div class="headline-title">New
